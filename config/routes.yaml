@@ -1,0 +1,33 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+index:
+    path: /index
+    controller: App\Controller\Sayagym\DefaultController::index
+
+register:
+    path: /register
+    controller: App\Controller\Sayagym\DefaultController::register
+
+login:
+    path: /login
+    controller: App\Controller\Sayagym\DefaultController::login
+
+register2:
+    path: /register2
+    controller: App\Controller\Sayagym\DefaultController::register2
+
+planEnt:
+    path: /planEnt
+    controller: App\Controller\Sayagym\DefaultController::checkLogin
+
+CrearPlan:
+    path: /CrearPlan
+    controller: App\Controller\Sayagym\DefaultController::createPlan
+
+showPlan:
+    path: /showPlan/
+    controller: App\Controller\Sayagym\DefaultController::showPlan

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sayagym{% endblock %}
+
+{% block content %}
+    <div style="text-align: center; padding: 20px;">
+        <h1>Bienvenido a Sayagym Querétaro </h1>
+        <p>¡Descubre nuestro nuevo gimnasio y empieza a transformar tu cuerpo!</p>
+        <p>En Super Sayagym nos enfocamos en tu bienestar y en alcanzar tus metas fitness.</p>
+        <p>Inicia sesión para gestionar tu plan de entrenamiento o regístrate para comenzar.</p>
+        <br>
+        <a href="{{ path('login') }}" style="padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px;">Iniciar Sesión</a>
+        <a href="{{ path('register2') }}" style="padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; margin-left: 10px;">Registrarse</a>
+    </div>
+{% endblock %}
+{% block javascript %}
+    <script>
+    </script>
+{% endblock %}

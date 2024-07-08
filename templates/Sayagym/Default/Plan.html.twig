@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sayagym{% endblock %}
+
+{% block content %}
+    <div class="container text-center my-5">
+        <h1>Plan de Entrenamiento</h1><a href="{{ path('CrearPlan') }}" class="btn btn-primary mb-3"><i class="fa-solid fa-plus"></i></a>
+        <div class="table-responsive my-4">
+            <table class="table table-bordered table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Rutina</th>
+                        <th>Enfoque</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Descripción</td>
+                            <td>
+                                <a href="#" class="btn btn-success btn-sm">Editar</a>
+                                <a href="#" class="btn btn-danger btn-sm">Eliminar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">No hay planes de entrenamiento disponibles.</td>
+                        </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <a href="{{ path('index') }}" style="padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; margin-left: 10px;">Cerrar Sesión</a>
+    </div>
+{% endblock %}
+{% block javascript %}
+    <script>
+    </script>
+{% endblock %}
